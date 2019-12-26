@@ -11,7 +11,7 @@ so we need to use the addon to call dll.
 
 ```
 #include "stdafx.h"
-extern "C" _declspec(dllexport) int Add(int x, int y)//申明函数为导出函数
+extern "C" _declspec(dllexport) int Add(int x, int y)
 {
 	int result = x + y;
 	return result;
