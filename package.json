@@ -1,0 +1,25 @@
+{
+  "name": "electron-call-dll",
+  "version": "1.0.0",
+  "description": "use addon call dll in electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w native",
+  },
+  "repository": "https://github.com/zpm683/electron-call-dll.git",
+  "keywords": [
+    "Electron",
+    "addon",
+    "dll",
+    "demo"
+    "nan"
+  ],
+  "author": "GitHub",
+  "devDependencies": {
+    "electron": "^7.0.0",
+    "electron-rebuild": "^1.8.8",
+    "nan": "^2.0.0"
+  },
+  "dependencies": {}
+}
