@@ -2,7 +2,7 @@
 
 ## why used addon? not ffi?
 we know use the node-ffi to call dll is easly
-but in >electron5 [node.js 12+], node-ffi cannt work (node-ffi used node.js 8)
+but in >electron5 [node.js 12+], node-ffi cannt working well  (because node-ffi used node.js 8)
 so we need to use the addon to call dll.
 
 ## i used this [node-addon-api](https://github.com/nodejs/node-addon-api) to call the add.dll.
