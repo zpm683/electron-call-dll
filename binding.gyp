@@ -1,11 +1,14 @@
 {
   "targets": [
     {
-      "target_name": "demo",
-      "sources": [ "native/demo.cc" ],
+      "target_name": "addon",
+      "cflags!": [ "-fno-exceptions" ],
+      "cflags_cc!": [ "-fno-exceptions" ],
+      "sources": [ "./native/demo.cc" ],
       "include_dirs": [
-        "<!(node -e \"require('nan')\")"
-      ]
+        "<!@(node -p \"require('node-addon-api').include\")"
+      ],
+      'defines': [ 'NAPI_DISABLE_CPP_EXCEPTIONS' ],
     }
   ]
 }
