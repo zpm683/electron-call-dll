@@ -1,25 +1,25 @@
 {
-  "name": "electron-call-dll",
+  "name": "electron-call-dll-test",
   "version": "1.0.0",
-  "description": "use addon call dll in electron",
+  "description": "use node-addon-api to call dll",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "rebuild": "electron-rebuild -f -w native",
   },
-  "repository": "https://github.com/zpm683/electron-call-dll.git",
+  "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
-    "addon",
     "dll",
+    "node-addon-api",
     "demo"
-    "nan"
   ],
-  "author": "GitHub",
+  "author": "zpm683",
   "devDependencies": {
-    "electron": "^7.0.0",
+    "electron": "^5.0.6",
     "electron-rebuild": "^1.8.8",
-    "nan": "^2.0.0"
+    "bindings": "^1.5.0",
+    "node-addon-api": "^2.0.0"
   },
-  "dependencies": {}
+  "license": "MIT"
 }
